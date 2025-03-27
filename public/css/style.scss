@@ -77,12 +77,20 @@ a {
         margin-bottom: 20px;
         justify-content: center;
         transition: $transition;
+        position: relative;
     }
     &_logo {
         display: flex;
         align-items: center;
         gap: 10px;
-        display: none;
+        // display: none;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        // transition: $transition;
+        left: 56px;
+        top: 50%;
+        transform: translateY(-50%);
         >img {
             width: 20px;
         }
@@ -90,15 +98,16 @@ a {
             font-size: 20px;
             color: #8E61C3;
             margin: 0;
+            white-space: nowrap;
         }
     }
     &_icon {
-        width: 44px;
-        height: 44px;
+        width: 24px;
+        height: 24px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 12px;
+        // border-radius: 12px;
         svg {
             width: 24px;
             height: 24px;
@@ -113,16 +122,27 @@ a {
             align-items: center;
             justify-content: center;
             gap: 12px;
+            position: relative;
+            padding: 15px;
+            border-radius: 14px;
+            width: 54px;
+            height: 54px;
+            margin-left: auto;
+            margin-right: auto;
             span {
                 font-size: 16px;
                 font-weight: 700;
                 color: #4A4458;
-                display: none;
+                // display: none;
+                opacity: 0;
+                visibility: hidden;
+                transition: $transition;
+                position: absolute;
             }
             &.active {
+                background-color: #9E84BB;
                 .nav {
                     &_icon {
-                        background-color: #9E84BB;
                         svg {
                             // width: 40px;
                             // height: 40px;
@@ -131,6 +151,9 @@ a {
                             }
                         }
                     }
+                }
+                span {
+                    color: #fff;
                 }
             }
         }
@@ -169,7 +192,10 @@ a {
         padding: 30px 28px;
         .nav {
             &_logo {
-                display: flex;
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
             }
             &_title {
                 justify-content: flex-start;
@@ -178,8 +204,13 @@ a {
         ul {
             a {
                 justify-content: flex-start;
+                width: 100%;
+                border-radius: 20px;
                 span {
-                    display: block;
+                    // display: block;
+                    visibility: visible;
+                    opacity: 1;
+                    position: static;
                 }
             }
         }

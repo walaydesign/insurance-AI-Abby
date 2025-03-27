@@ -97,6 +97,7 @@ a {
           justify-content: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: relative;
 }
 
 .nav_logo {
@@ -107,7 +108,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  display: none;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  left: 56px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .nav_logo > img {
@@ -118,11 +125,12 @@ a {
   font-size: 20px;
   color: #8E61C3;
   margin: 0;
+  white-space: nowrap;
 }
 
 .nav_icon {
-  width: 44px;
-  height: 44px;
+  width: 24px;
+  height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +140,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 12px;
 }
 
 .nav_icon svg {
@@ -155,21 +162,36 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 12px;
+  position: relative;
+  padding: 15px;
+  border-radius: 14px;
+  width: 54px;
+  height: 54px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav ul a span {
   font-size: 16px;
   font-weight: 700;
   color: #4A4458;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
 }
 
-.nav ul a.active .nav_icon {
+.nav ul a.active {
   background-color: #9E84BB;
 }
 
 .nav ul a.active .nav_icon svg path {
   fill: #fff;
+}
+
+.nav ul a.active span {
+  color: #fff;
 }
 
 .nav ul li {
@@ -219,9 +241,11 @@ a {
 }
 
 .nav.menu-open .nav_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .nav.menu-open .nav_title {
@@ -234,10 +258,14 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .nav.menu-open ul a span {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  position: static;
 }
 
 .nav.menu-open .purchase {
