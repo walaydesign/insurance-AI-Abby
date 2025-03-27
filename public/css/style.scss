@@ -2,9 +2,13 @@ $transition: 0.3s;
 
 body {
     background-color: #F3F6FB;
-    padding: 30px;
+    padding: 40px;
+    overflow: hidden;
     @media screen and (max-width: 767px) {
         padding: 20px;
+    }
+    @media screen and (max-width: 370px) {
+        padding: 16px;
     }
 }
 
@@ -53,21 +57,24 @@ a {
     padding: 30px 0;
     width: 80px;
     box-shadow: 0 0 24px rgba(0,0,0,0.08);
-    height: calc(100vh - 60px);
+    height: calc(100vh - 80px);
     position: relative;
     transition: $transition;
     &_menu {
-        width: 24px;
         padding: 0;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
         >img {
-            width: 100%;
+            // width: 100%;
+            width: 24px;
         }
     }
     &_title {
         display: flex;
         align-items: center;
-        gap: 26px;
-        margin-bottom: 47px;
+        gap: 12px;
+        margin-bottom: 20px;
         justify-content: center;
         transition: $transition;
     }
@@ -86,15 +93,15 @@ a {
         }
     }
     &_icon {
-        width: 56px;
-        height: 56px;
+        width: 44px;
+        height: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 14px;
+        border-radius: 12px;
         svg {
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             path {
                 fill: #8E61C3;
             }
@@ -105,9 +112,9 @@ a {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 17px;
+            gap: 12px;
             span {
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 700;
                 color: #4A4458;
                 display: none;
@@ -115,10 +122,10 @@ a {
             &.active {
                 .nav {
                     &_icon {
-                        background-color: #8E61C3;
+                        background-color: #9E84BB;
                         svg {
-                            width: 40px;
-                            height: 40px;
+                            // width: 40px;
+                            // height: 40px;
                             path {
                                 fill: #fff;
                             }
@@ -128,7 +135,7 @@ a {
             }
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 16px;
         }
     }
     .purchase {
@@ -137,10 +144,10 @@ a {
         justify-content: center;
         padding: 10px;
         border-radius: 100px;
-        border: 1px solid #8E61C3;
+        border: 1px solid #F3994F;
         gap: 8px;
         position: absolute;
-        bottom: 96px;
+        bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
         width: 48px;
@@ -151,18 +158,21 @@ a {
             width: 30px;
         }
         span {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 700;
-            color: #8E61C3;
+            color: #F3994F;
             display: none;
         }
     }
     &.menu-open {
         width: 260px;
-        padding: 30px 20px;
+        padding: 30px 28px;
         .nav {
             &_logo {
                 display: flex;
+            }
+            &_title {
+                justify-content: flex-start;
             }
         }
         ul {
@@ -184,9 +194,11 @@ a {
     @media screen and (max-width: 767px) {
         position: fixed;
         width: 260px;
-        padding: 30px 20px;
+        padding: 25px 15px;
         z-index: 10;
         left: -300px;
+        top: 20px;
+        height: calc(100vh - 40px);
         .nav {
             &_logo {
                 display: flex;
@@ -201,35 +213,45 @@ a {
             }
         }
         .purchase {
-            width: calc(100% - 40px);
+            // width: calc(100% - 40px);
+            width: fit-content;
+            padding: 4px 12px;
             border-radius: 100px;
+            left: 15px;
+            transform: none;
             span {
                 display: block;;
             }
         }
         &.active {
-            left: 20px;
+            left: 12px;
+        }
+        &_logo {
+            display: none;
+        }
+        &_title {
+            justify-content: flex-start;
         }
     }
 }
 
 .page {
     width: calc(100% - 80px);
-    padding-left: 23px;
+    padding-left: 30px;
     transition: $transition;
     &_inner {
         background-color: #fff;
         border-radius: 30px;
-        padding-top: 100px;
+        padding-top: 60px;
         box-shadow: 0 0 24px rgba(0,0,0,0.08);
         width: 100%;
-        height: calc(100vh - 60px);
+        height: calc(100vh - 80px);
         overflow-y: auto;
     }
     &.menu-open {
         width: calc(100% - 260px);
         .chat_bottom {
-            width: calc(100% - 260px - 23px - 60px);
+            width: calc(100% - 260px - 30px - 80px - 40px);
         }
     }
     &_head {
@@ -250,28 +272,41 @@ a {
             background-color: transparent;
             border-radius: 0;
             box-shadow: none;
+            padding-top: 70px;
         }
         &_head {
             justify-content: space-between;
-            width: calc(100% - 60px);
-            right: 30px;
+            // width: calc(100% - 40px);
+            width: 100%;
+            padding: 0 20px;
             background-color: #F3F6FB;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            // padding-top: 20px;
+            // padding-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+            right: 0;
             top: 0;
+            border-bottom: 1px solid #DBDBDB;
             .nav_title {
                 display: flex;
                 margin: 0;
             }
             .nav_logo {
-                display: flex;
+                display: none;
             }
         }
+    }
+    @media screen and (max-width: 370px) {
+        // &_head {
+        //     width: calc(100% - 32px);
+        // }
     }
 }
 
 .chat {
-    max-width: 745px;
+    max-width: 768px;
     width: 100%;
     margin: 0 auto;
     padding-left: 20px;
@@ -303,7 +338,7 @@ a {
         }
         &_text {
             width: calc(100% - 33px);
-            padding-left: 14px;
+            padding-left: 12px;
             font-weight: 700;
             line-height: 1.9;
             hr {
@@ -312,17 +347,18 @@ a {
         }
     }
     &_inner {
-        padding-bottom: 192px;
+        padding-bottom: 220px;
     }
     &_bottom {
         position: fixed;
-        width: calc(100% - 80px - 23px - 60px);
+        width: calc(100% - 80px - 30px - 80px - 40px);
         border-radius: 0 0 30px 30px;
-        bottom: 30px;
-        right: 30px;
+        bottom: 40px;
+        right: 60px;
         transition: $transition;
+        background-color: #fff;
         &_inner {
-            max-width: 745px;
+            max-width: 768px;
             width: 100%;
             margin: 0 auto;
             background-color: #fff;
@@ -331,7 +367,7 @@ a {
             padding-right: 20px;
         }
         .remark {
-            font-size: 14px;
+            font-size: 12px;
             margin: 0;
             color: #718096;
         }
@@ -344,9 +380,10 @@ a {
         background-color: #fff;
         input {
             width: 100%;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            padding: 5px 0;
+            font-size: 16px;
             &::placeholder {
-                font-size: 14px;
                 color: rgba(0,0,0,0.4);
             }
         }
@@ -382,6 +419,22 @@ a {
                     }
                     span {
                         color: #8E61C3;
+                        font-weight: 700;
+                    }
+                    &.btn-orange {
+                        border-color: #F3994F;
+                        span {
+                            color: #F3994F;
+                        }
+                    }
+                    &.btn-icon {
+                        width: 25px;
+                        height: 25px;
+                        padding: 0;
+                        border: 0;
+                        >img {
+                            width: 100%;
+                        }
                     }
                 }               
             }
@@ -418,6 +471,7 @@ a {
                     gap: 8px;
                     button {
                         gap: 0;
+                        padding: 6px 8px;
                         img {
                             width: 16px;
                         }
@@ -431,7 +485,50 @@ a {
                 width: 24px;
             }
         }
+        &_inner {
+            padding-bottom: 120px;
+        }
+        .question {
+            font-size: 14px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .answer {
+            &_logo {
+                width: 30px;
+                height: 30px;
+            }
+            &_text {
+                font-size: 14px;
+                width: calc(100% - 30px);
+                padding-left: 25px;
+            }
+        }
 
+    }
+    @media screen and (max-width: 370px) {
+        &_input {
+            padding: 10px;
+            position: relative;
+            &_btn {
+                &_left {
+                    gap: 8px;
+                    button {
+                        img {
+                            width: 12px;
+                        }
+                    }
+                }
+            }
+            &_send {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+            }
+            input {
+                margin-bottom: 12px;
+            }
+        }
     }
 }
 
@@ -453,7 +550,7 @@ a {
     }
     &_nav {
         display: none;
-        width: 130px;
+        width: 140px;
         position: absolute;
         background-color: #fff;
         border-radius: 10px;
@@ -480,7 +577,7 @@ a {
                 width: 18px;
             }
             span {
-                font-size: 14px;
+                font-size: 16px;
                 color: #4A4458;
             }
         }
@@ -501,6 +598,88 @@ a {
     transform: translateY(-50%);
     padding: 0;
     >img {
+        width: 100%;
+    }
+    @media screen and (max-width: 1399px) {
+        display: none;
+    }
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    &_bg {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(21, 22, 21, 0.3);
+    }
+    &_content {
+        padding: 40px 16px 20px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #F0F3F8;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: #D9D9D9;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    ul {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid #8E61C3;
+        li {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 13px;
+            border-bottom: 1px solid #8E61C3;
+            img {
+                width: 16px;
+            }
+            span {
+                color: #8E61C3;
+                font-size: 14px;
+            }
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+
+    }
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 13, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    img {
         width: 100%;
     }
 }
