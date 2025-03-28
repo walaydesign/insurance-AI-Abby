@@ -18,3 +18,7 @@ $(".modal_bg").click(function() {
 $(".btn-func").click(function() {
     $("#modal-edit").fadeIn(300);
 })
+
+$(".btn-loading").click(function() {
+    $(".loading").fadeIn(300);
+})
