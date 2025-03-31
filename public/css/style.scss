@@ -6,6 +6,7 @@ body {
     overflow: hidden;
     @media screen and (max-width: 767px) {
         padding: 20px;
+        overflow: visible;
     }
     @media screen and (max-width: 370px) {
         padding: 16px;
@@ -57,9 +58,11 @@ a {
     padding: 30px 0;
     width: 80px;
     box-shadow: 0 0 24px rgba(0,0,0,0.08);
-    height: calc(100vh - 80px);
+    // height: calc(100vh - 80px);
     position: relative;
     transition: $transition;
+    position: fixed;
+    height: calc(100% - 80px);
     &_menu {
         padding: 0;
         width: 44px;
@@ -83,11 +86,9 @@ a {
         display: flex;
         align-items: center;
         gap: 10px;
-        // display: none;
         position: absolute;
         opacity: 0;
         visibility: hidden;
-        // transition: $transition;
         left: 56px;
         top: 50%;
         transform: translateY(-50%);
@@ -107,7 +108,6 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        // border-radius: 12px;
         svg {
             width: 24px;
             height: 24px;
@@ -130,10 +130,9 @@ a {
             margin-left: auto;
             margin-right: auto;
             span {
-                font-size: 16px;
-                font-weight: 700;
+                // font-size: 20px;
+                // font-weight: 700;
                 color: #4A4458;
-                // display: none;
                 opacity: 0;
                 visibility: hidden;
                 transition: $transition;
@@ -144,8 +143,6 @@ a {
                 .nav {
                     &_icon {
                         svg {
-                            // width: 40px;
-                            // height: 40px;
                             path {
                                 fill: #fff;
                             }
@@ -178,10 +175,10 @@ a {
         border-radius: 50%;
         transition: $transition;
         img {
-            width: 30px;
+            width: 24px;
         }
         span {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 700;
             color: #F3994F;
             display: none;
@@ -207,7 +204,6 @@ a {
                 width: 100%;
                 border-radius: 20px;
                 span {
-                    // display: block;
                     visibility: visible;
                     opacity: 1;
                     position: static;
@@ -229,7 +225,8 @@ a {
         z-index: 10;
         left: -300px;
         top: 20px;
-        height: calc(100vh - 40px);
+        // height: calc(100vh - 40px);
+        height: calc(100% - 40px);
         .nav {
             &_logo {
                 display: flex;
@@ -248,7 +245,6 @@ a {
             }
         }
         .purchase {
-            // width: calc(100% - 40px);
             width: fit-content;
             padding: 4px 12px;
             border-radius: 100px;
@@ -282,11 +278,22 @@ a {
         width: 100%;
         height: calc(100vh - 80px);
         overflow-y: auto;
+        position: fixed;
+        width: calc(100% - 80px - 80px - 30px);
+        height: calc(100% - 80px);
+        top: 40px;
+        right: 40px;
+        transition: $transition;
     }
     &.menu-open {
-        width: calc(100% - 260px);
+        .page {
+            width: calc(100% - 260px);
+            &_inner {
+                width: calc(100% - 260px - 80px - 30px);
+            }
+        }
         .chat_bottom {
-            width: calc(100% - 260px - 30px - 80px - 40px);
+            // width: calc(100% - 260px - 30px - 80px - 40px);
         }
     }
     &_head {
@@ -308,6 +315,9 @@ a {
             border-radius: 0;
             box-shadow: none;
             padding-top: 70px;
+            height: auto;
+            position: static;
+            width: 100%;
         }
         &_head {
             justify-content: space-between;
@@ -333,11 +343,6 @@ a {
             }
         }
     }
-    @media screen and (max-width: 370px) {
-        // &_head {
-        //     width: calc(100% - 32px);
-        // }
-    }
 }
 
 .chat {
@@ -350,7 +355,7 @@ a {
         padding: 17px 26px;
         border-radius: 30px 30px 0 30px;
         background-color: #EEEEEE;
-        font-weight: 700;
+        // font-weight: 700;
         color: #718096;
         margin-bottom: 30px;
         width: fit-content;
@@ -374,24 +379,34 @@ a {
         &_text {
             width: calc(100% - 33px);
             padding-left: 12px;
-            font-weight: 700;
+            // font-weight: 700;
             line-height: 1.9;
+            // font-size: 20px;
             hr {
                 margin: 10px 0;
             }
         }
     }
     &_inner {
-        padding-bottom: 220px;
+        // padding-bottom: 220px;
+        padding-bottom: 40px;
     }
     &_bottom {
         position: fixed;
-        width: calc(100% - 80px - 30px - 80px - 40px);
+        // position: absolute;
+        // position: sticky;
+        // width: 100%;
+        // width: calc(100% - 80px - 30px - 80px - 40px);
         border-radius: 0 0 30px 30px;
         bottom: 40px;
         right: 60px;
+        // bottom: 0;
+        // left: 0;
+        // left: 50%;
+        // transform: translateX(-50%);
         transition: $transition;
         background-color: #fff;
+        width: calc(100% - 80px - 80px - 30px - 40px);
         &_inner {
             max-width: 768px;
             width: 100%;
@@ -417,7 +432,7 @@ a {
             width: 100%;
             margin-bottom: 20px;
             padding: 5px 0;
-            font-size: 16px;
+            font-size: 18px;
             &::placeholder {
                 color: rgba(0,0,0,0.4);
             }
@@ -449,12 +464,15 @@ a {
                     display: flex;
                     align-items: center;
                     gap: 5px;
+                    transition: $transition;
                     img {
                         width: 24px;
                     }
                     span {
                         color: #8E61C3;
-                        font-weight: 700;
+                        transition: $transition;
+                        // font-weight: 700;
+                        font-size: 14px;
                     }
                     &.btn-orange {
                         border-color: #F3994F;
@@ -471,7 +489,51 @@ a {
                             width: 100%;
                         }
                     }
+                    &.btn-func {
+                        position: relative;
+                        ul {
+                            position: absolute;
+                            background-color: #fff;
+                            width: 100px;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0,0,0,0.15), 0 1px 3px rgba(0,0,0,0.3);
+                            bottom: 100%;
+                            left: 0;
+                            display: none;
+                            li {
+                                cursor: pointer;
+                                padding: 6px 15px;
+                                border-bottom: 1px solid #D9D9D9;
+                                display: flex;
+                                align-items: center;
+                                gap: 12px;
+                                img {
+                                    width: 16px;
+                                }
+                                span {
+                                    color: #4A4458;
+                                }
+                                &:last-child {
+                                    border: 0;
+                                }
+                            }
+                        }
+                    }
                 }               
+            }
+            &_link {
+                display: flex;
+                align-items: center;
+                gap: 12px; 
+                button {
+                    background-color: #F3994F;
+                    padding: 8px 16px;
+                    &:hover {
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
             }
         }
         &_send {
@@ -504,6 +566,10 @@ a {
             &_btn {
                 &_left {
                     gap: 8px;
+                    // flex-wrap: wrap;
+                    // flex-direction: column;
+                    // gap: 12px;
+                    // align-items: flex-start;
                     button {
                         gap: 0;
                         padding: 6px 8px;
@@ -511,20 +577,32 @@ a {
                             width: 16px;
                         }
                         span {
-                            font-size: 10px;
+                            font-size: 16px;
+                            
                         }
                     }
+                }
+                &_link {
+                    gap: 8px;
                 }
             }
             &_send {
                 width: 24px;
+                position: absolute;
+                top: 24px;
+                right: 32px;
+            }
+            input {
+                font-size: 18px;
+            }
+            &_send {
             }
         }
         &_inner {
             padding-bottom: 120px;
         }
         .question {
-            font-size: 14px;
+            // font-size: 20px;
             padding: 20px;
             margin-bottom: 25px;
         }
@@ -534,14 +612,14 @@ a {
                 height: 30px;
             }
             &_text {
-                font-size: 14px;
+                // font-size: 20px;
                 width: calc(100% - 30px);
-                padding-left: 25px;
+                padding-left: 15px;
             }
         }
 
     }
-    @media screen and (max-width: 370px) {
+    @media screen and (max-width: 400px) {
         &_input {
             padding: 10px;
             position: relative;
@@ -549,16 +627,20 @@ a {
                 &_left {
                     gap: 8px;
                     button {
+                        gap: 4px;
                         img {
                             width: 12px;
+                        }
+                        span {
+                            font-size: 12px;
                         }
                     }
                 }
             }
             &_send {
-                position: absolute;
-                top: 12px;
+                top: 15px;
                 right: 12px;
+
             }
             input {
                 margin-bottom: 12px;
@@ -699,7 +781,6 @@ a {
     &::after {
         position: absolute;
         content: "";
-
     }
 }
 
