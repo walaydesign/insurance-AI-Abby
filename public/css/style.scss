@@ -4,7 +4,7 @@ body {
     background-color: #F3F6FB;
     padding: 40px;
     overflow: hidden;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         padding: 20px;
         overflow: visible;
     }
@@ -218,7 +218,7 @@ a {
             }
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         position: fixed;
         width: 260px;
         padding: 25px 15px;
@@ -293,6 +293,7 @@ a {
             }
         }
         .chat_bottom {
+            width: calc(100% - 260px - 80px - 30px - 40px);
             // width: calc(100% - 260px - 30px - 80px - 40px);
         }
     }
@@ -307,7 +308,7 @@ a {
             display: none;
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         width: 100%;
         padding: 0;
         &_inner {
@@ -544,7 +545,7 @@ a {
             }
         }
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 991px) {
         padding-left: 0;
         padding-right: 0;
         &_bottom {
@@ -555,6 +556,7 @@ a {
                 background-color: #F3F6FB;
                 padding-left: 15px;
                 padding-right: 15px;
+                max-width: inherit;
             }
         }
         &_input {

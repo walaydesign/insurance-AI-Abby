@@ -1,7 +1,8 @@
 $(".nav_menu").click(function() {
-    if($(window).width() > 767) {
+    if($(window).width() > 992) {
         $(".nav").toggleClass("menu-open");
-        $(".page").toggleClass("menu-open");        
+        $(".page").toggleClass("menu-open");  
+        chatBoxHeight();      
     }else {
         $(".nav").toggleClass("active");
     }

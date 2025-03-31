@@ -4,7 +4,7 @@ body {
   overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   body {
     padding: 20px;
     overflow: visible;
@@ -277,7 +277,7 @@ a {
   display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .nav {
     position: fixed;
     width: 260px;
@@ -363,6 +363,10 @@ a {
   width: calc(100% - 260px - 80px - 30px);
 }
 
+.page.menu-open .chat_bottom {
+  width: calc(100% - 260px - 80px - 30px - 40px);
+}
+
 .page_head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,7 +386,7 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .page {
     width: 100%;
     padding: 0;
@@ -704,7 +708,7 @@ a {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .chat {
     padding-left: 0;
     padding-right: 0;
@@ -718,6 +722,7 @@ a {
     background-color: #F3F6FB;
     padding-left: 15px;
     padding-right: 15px;
+    max-width: inherit;
   }
   .chat_input {
     padding: 15px;
