@@ -172,7 +172,7 @@ a {
 }
 
 .nav ul a span {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   color: #4A4458;
   opacity: 0;
@@ -225,11 +225,11 @@ a {
 }
 
 .nav .purchase img {
-  width: 30px;
+  width: 24px;
 }
 
 .nav .purchase span {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   color: #F3994F;
   display: none;
@@ -472,6 +472,7 @@ a {
   padding-left: 12px;
   font-weight: 700;
   line-height: 1.9;
+  font-size: 20px;
 }
 
 .chat .answer_text hr {
@@ -504,7 +505,7 @@ a {
 }
 
 .chat_bottom .remark {
-  font-size: 12px;
+  font-size: 16px;
   margin: 0;
   color: #718096;
 }
@@ -521,7 +522,7 @@ a {
   width: 100%;
   margin-bottom: 20px;
   padding: 5px 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .chat_input input::-webkit-input-placeholder {
@@ -665,7 +666,7 @@ a {
     width: 16px;
   }
   .chat_input_btn_left button span {
-    font-size: 10px;
+    font-size: 16px;
   }
   .chat_input_send {
     width: 24px;
@@ -674,7 +675,7 @@ a {
     padding-bottom: 120px;
   }
   .chat .question {
-    font-size: 14px;
+    font-size: 20px;
     padding: 20px;
     margin-bottom: 25px;
   }
@@ -683,9 +684,12 @@ a {
     height: 30px;
   }
   .chat .answer_text {
-    font-size: 14px;
+    font-size: 20px;
     width: calc(100% - 30px);
     padding-left: 25px;
+  }
+  .chat_input input{
+    font-size: 18px;
   }
 }
 
