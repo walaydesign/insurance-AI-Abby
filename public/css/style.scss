@@ -2,14 +2,14 @@ $transition: 0.3s;
 
 body {
     background-color: #F3F6FB;
-    padding: 40px;
+    padding: 10px;
     overflow: hidden;
     @media screen and (max-width: 991px) {
-        padding: 20px;
+        // padding: 20px;
         overflow: visible;
     }
     @media screen and (max-width: 370px) {
-        padding: 16px;
+        // padding: 16px;
     }
 }
 
@@ -58,18 +58,16 @@ a {
     padding: 30px 0;
     width: 80px;
     box-shadow: 0 0 24px rgba(0,0,0,0.08);
-    // height: calc(100vh - 80px);
     position: relative;
     transition: $transition;
     position: fixed;
-    height: calc(100% - 80px);
+    height: calc(100% - 20px);
     &_menu {
         padding: 0;
         width: 44px;
         height: 44px;
         cursor: pointer;
         >img {
-            // width: 100%;
             width: 24px;
         }
     }
@@ -130,8 +128,6 @@ a {
             margin-left: auto;
             margin-right: auto;
             span {
-                // font-size: 20px;
-                // font-weight: 700;
                 color: #4A4458;
                 opacity: 0;
                 visibility: hidden;
@@ -225,7 +221,6 @@ a {
         z-index: 10;
         left: -300px;
         top: 20px;
-        // height: calc(100vh - 40px);
         height: calc(100% - 40px);
         .nav {
             &_logo {
@@ -275,26 +270,23 @@ a {
         border-radius: 30px;
         padding-top: 60px;
         box-shadow: 0 0 24px rgba(0,0,0,0.08);
-        width: 100%;
-        height: calc(100vh - 80px);
         overflow-y: auto;
         position: fixed;
-        width: calc(100% - 80px - 80px - 30px);
-        height: calc(100% - 80px);
-        top: 40px;
-        right: 40px;
+        width: calc(100% - 20px - 80px - 10px);
+        height: calc(100% - 20px);
+        top: 10px;
+        right: 10px;
         transition: $transition;
     }
     &.menu-open {
         .page {
             width: calc(100% - 260px);
             &_inner {
-                width: calc(100% - 260px - 80px - 30px);
+                width: calc(100% - 260px - 20px - 10px);
             }
         }
         .chat_bottom {
-            width: calc(100% - 260px - 80px - 30px - 40px);
-            // width: calc(100% - 260px - 30px - 80px - 40px);
+            width: calc(100% - 260px - 20px - 10px - 40px);
         }
     }
     &_head {
@@ -322,12 +314,9 @@ a {
         }
         &_head {
             justify-content: space-between;
-            // width: calc(100% - 40px);
             width: 100%;
             padding: 0 20px;
             background-color: #F3F6FB;
-            // padding-top: 20px;
-            // padding-bottom: 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -356,7 +345,6 @@ a {
         padding: 17px 26px;
         border-radius: 30px 30px 0 30px;
         background-color: #EEEEEE;
-        // font-weight: 700;
         color: #718096;
         margin-bottom: 30px;
         width: fit-content;
@@ -380,34 +368,23 @@ a {
         &_text {
             width: calc(100% - 33px);
             padding-left: 12px;
-            // font-weight: 700;
             line-height: 1.9;
-            // font-size: 20px;
             hr {
                 margin: 10px 0;
             }
         }
     }
     &_inner {
-        // padding-bottom: 220px;
         padding-bottom: 40px;
     }
     &_bottom {
         position: fixed;
-        // position: absolute;
-        // position: sticky;
-        // width: 100%;
-        // width: calc(100% - 80px - 30px - 80px - 40px);
         border-radius: 0 0 30px 30px;
-        bottom: 40px;
-        right: 60px;
-        // bottom: 0;
-        // left: 0;
-        // left: 50%;
-        // transform: translateX(-50%);
+        bottom: 10px;
+        right: 30px;
         transition: $transition;
         background-color: #fff;
-        width: calc(100% - 80px - 80px - 30px - 40px);
+        width: calc(100% - 20px - 80px - 10px - 40px);
         &_inner {
             max-width: 768px;
             width: 100%;
@@ -472,8 +449,7 @@ a {
                     span {
                         color: #8E61C3;
                         transition: $transition;
-                        // font-weight: 700;
-                        font-size: 14px;
+                        font-size: 16px;
                     }
                     &.btn-orange {
                         border-color: #F3994F;
@@ -568,10 +544,6 @@ a {
             &_btn {
                 &_left {
                     gap: 8px;
-                    // flex-wrap: wrap;
-                    // flex-direction: column;
-                    // gap: 12px;
-                    // align-items: flex-start;
                     button {
                         gap: 0;
                         padding: 6px 8px;
@@ -580,7 +552,6 @@ a {
                         }
                         span {
                             font-size: 16px;
-                            
                         }
                     }
                 }
@@ -597,14 +568,11 @@ a {
             input {
                 font-size: 18px;
             }
-            &_send {
-            }
         }
         &_inner {
             padding-bottom: 120px;
         }
         .question {
-            // font-size: 20px;
             padding: 20px;
             margin-bottom: 25px;
         }
@@ -614,7 +582,6 @@ a {
                 height: 30px;
             }
             &_text {
-                // font-size: 20px;
                 width: calc(100% - 30px);
                 padding-left: 15px;
             }
@@ -635,6 +602,11 @@ a {
                         }
                         span {
                             font-size: 12px;
+                        }
+                        .btn-func_list {
+                            span {
+                                font-size: 16px;
+                            }
                         }
                     }
                 }
