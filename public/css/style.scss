@@ -178,7 +178,7 @@ a {
             width: 24px;
         }
         span {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 700;
             color: #F3994F;
             display: none;
@@ -418,7 +418,7 @@ a {
             padding-right: 20px;
         }
         .remark {
-            font-size: 12px;
+            font-size: 14px;
             margin: 0;
             color: #718096;
         }
@@ -527,9 +527,9 @@ a {
                 align-items: center;
                 gap: 12px; 
                 button {
-                    background-color: #F3994F;
                     padding: 8px 16px;
                     &:hover {
+                        background-color: #F3994F;
                         span {
                             font-weight: 700;
                         }
@@ -705,6 +705,11 @@ a {
             color: #B2B2B2;
             padding-left: 10px !important;
             padding-right: 10px !important;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &_nav {
+            right: 20px;
         }
     }
 }

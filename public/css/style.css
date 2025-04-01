@@ -229,7 +229,7 @@ a {
 }
 
 .nav .purchase span {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: #F3994F;
   display: none;
@@ -516,7 +516,7 @@ a {
 }
 
 .chat_bottom .remark {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   color: #718096;
 }
@@ -691,8 +691,11 @@ a {
 }
 
 .chat_input_btn_link button {
-  background-color: #F3994F;
   padding: 8px 16px;
+}
+
+.chat_input_btn_link button:hover {
+  background-color: #F3994F;
 }
 
 .chat_input_btn_link button:hover span {
@@ -868,6 +871,12 @@ a {
   color: #B2B2B2;
   padding-left: 10px !important;
   padding-right: 10px !important;
+}
+
+@media screen and (max-width: 991px) {
+  .account_nav {
+    right: 20px;
+  }
 }
 
 .fixed-btn {
