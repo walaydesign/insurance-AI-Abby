@@ -357,7 +357,7 @@ a {
             width: 33px;
             height: 33px;
             border-radius: 50%;
-            background-color: #8E61C3;
+            background-color: #7B59A3;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -438,7 +438,7 @@ a {
                 button {
                     padding: 8px;
                     border-radius: 100px;
-                    border: 1px solid #8E61C3;
+                    border: 1px solid #7B59A3;
                     display: flex;
                     align-items: center;
                     gap: 5px;
@@ -446,8 +446,15 @@ a {
                     img {
                         width: 24px;
                     }
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        path {
+                            fill: #7B59A3;
+                        }
+                    }
                     span {
-                        color: #8E61C3;
+                        color: #7B59A3;
                         transition: $transition;
                         font-size: 16px;
                     }

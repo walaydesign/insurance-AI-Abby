@@ -455,7 +455,7 @@ a {
   width: 33px;
   height: 33px;
   border-radius: 50%;
-  background-color: #8E61C3;
+  background-color: #7B59A3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +588,7 @@ a {
 .chat_input_btn_left button {
   padding: 8px;
   border-radius: 100px;
-  border: 1px solid #8E61C3;
+  border: 1px solid #7B59A3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,8 +604,17 @@ a {
   width: 24px;
 }
 
+.chat_input_btn_left button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.chat_input_btn_left button svg path {
+  fill: #7B59A3;
+}
+
 .chat_input_btn_left button span {
-  color: #8E61C3;
+  color: #7B59A3;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 16px;
