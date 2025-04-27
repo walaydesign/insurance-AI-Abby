@@ -12,34 +12,28 @@ $(".account_pic").click(function() {
     $(".account_nav").slideToggle(300);
 })
 
-$(".modal_bg").click(function() {
-    $(this).parents(".modal").fadeOut(300);
+$(".form-item__main").focus(function() {
+    $(this).parents(".form-item").addClass("focus");
 })
 
-$(".btn-func").click(function() {
-    // $("#modal-edit").fadeIn(300);
-    $(this).find(".btn-func_list").fadeToggle(300);
+$(".form-item__main").focusout(function() {
+    $(this).parents(".form-item").removeClass("focus");
 })
 
-$(document).click(function (event) {
-    var btnFunc = $(".btn-func");
-    if (!btnFunc.is(event.target) && btnFunc.has(event.target).length === 0) {
-        $(".btn-func_list").fadeOut(300);
+$(".form-item--password").find(".form-item__icon").click(function() {
+    $(this).parents(".form-item__wrapper").find("input").attr("type","text");
+})
+
+$(".modal-account__verify-clear").click(function() {
+    $(this).parents(".modal-account__verify").find("input").each(function() {
+        $(this).val("");
+    })
+})
+
+$(".btn-back").click(function() {
+    console.log("click btn-back");
+    if(!$(this).hasClass("btn-back--modal")) {
+        console.log("not modal");
+        history.back();
     }
-});
-
-$(".btn-loading").click(function() {
-    $(".loading").fadeIn(300);
 })
-
-$(window).on("resize scroll",function(){
-    chatBoxHeight();
-})
-chatBoxHeight();
-function chatBoxHeight() {
-    // if(window().width() < 768) {
-        let height = parseInt($(".chat_bottom_inner").css("height"));
-        let chatPadding = height + 20;
-        $(".chat_inner").css("padding-bottom", chatPadding);
-    // }
-}
