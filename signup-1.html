@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險捷客</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css?v=1">
+</head>
+<body class="page-inner">
+    
+    <div class="page-inner__main modal-account modal-account--login">
+        <button class="btn-back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 9L9 15" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 9L15 15" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <img class="modal-account__logo" src="./public/img/LOGO-purple-text.svg" alt="">
+        <div class="modal-account__progress">
+            <div class="row">
+                <div class="col-4"><div class="progress__item active"></div></div>
+                <div class="col-4"><div class="progress__item"></div></div>
+                <div class="col-4"><div class="progress__item"></div></div>
+            </div>
+        </div>
+        <div class="modal-account__text">
+            <h3 class="modal-account__title text-start">註冊</h3>
+            <ul>
+                <li>◎ 請於下方輸入登入密碼，按下「註冊」後，系統將自動派發登入帳號。</li>
+                <li>◎ 登入帳號若未使用，系統將於3個月後自動刪除。</li>
+            </ul>
+        </div>
+        <form action="">
+            <div class="form-item form-item--password">
+                <label for="">*密碼</label>
+                <div class="form-item__wrapper">
+                    <input type="password" class="form-item__main" placeholder="請輸入密碼">
+                    <button class="form-item__icon">
+                        <img src="./public/img/eye-off.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="form-item form-item--password">
+                <label for="">*再次輸入密碼</label>
+                <div class="form-item__wrapper">
+                    <input type="password" class="form-item__main" placeholder="請輸入密碼">
+                    <button class="form-item__icon">
+                        <img src="./public/img/eye-off.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <img class="modal-account__robot" src="./public/img/robot.png" alt="">
+            <div class="modal-account__btn-row row">
+                <div class="col-6">
+                    <button class="modal-account__btn btn-white btn-giveup">放棄</button>
+                </div>
+                <div class="col-6">
+                    <a href="./signup-2.html" class="modal-account__btn btn-orange">註冊</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/tw-city-selector/tw-city-selector.js"></script>
+    <script src="./public/js/index.js?v=1"></script>
+    <script>
+        $(".btn-giveup").click(function() {
+            history.back();
+        })
+    </script>
+
+</body>
+</html>

@@ -31,9 +31,7 @@ $(".modal-account__verify-clear").click(function() {
 })
 
 $(".btn-back").click(function() {
-    console.log("click btn-back");
     if(!$(this).hasClass("btn-back--modal")) {
-        console.log("not modal");
         history.back();
     }
 })

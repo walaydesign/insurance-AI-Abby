@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險捷客</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css?v=1">
+</head>
+<body class="page-inner">
+    
+    <div class="page-inner__main modal-account modal-account--subscribe">
+        <a href="./my-info.html" class="btn-back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 9L9 15" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 9L15 15" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <h3 class="modal-account__title">訂閱資訊</h3>
+        <form action="">
+            <p class="modal-account__current">目前訂閱方案 : 免費方案</p>
+            <div class="modal-account__radio-wrap">
+                <p>預定訂閱方案 : </p>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="modal-account__radio">
+                            <input type="radio" id="free" name="plan">
+                            <label for="free">免費方案</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="modal-account__radio">
+                            <input type="radio" id="basic" name="plan">
+                            <label for="basic">初階版</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="modal-account__radio">
+                            <input type="radio" id="standard" name="plan">
+                            <label for="standard">標準版</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-account__radio-wrap mb-2">
+                <p>訂閱方式 : </p>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="modal-account__radio">
+                            <input type="radio" id="one-time" name="way">
+                            <label for="one-time">一次付清</label>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="modal-account__radio">
+                            <input type="radio" id="monthly" name="way">
+                            <label for="monthly">月繳$300</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="modal-account__radio">
+                            <input type="radio" id="seasonly" name="way">
+                            <label for="seasonly">季繳$900</label>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="modal-account__radio">
+                            <input type="radio" id="half-year" name="way">
+                            <label for="half-year">半年繳$1800</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="">付款姓名/公司抬頭</label>
+                <div class="form-item__wrapper">
+                    <input type="text" class="form-item__main" placeholder="請輸入付款姓名/公司抬頭">
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="">發票開立通知信箱</label>
+                <div class="form-item__wrapper">
+                    <input type="email" class="form-item__main" placeholder="請輸入發票開立通知信箱">
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="modal-account__radio">
+                    <input type="radio" id="person" name="identity">
+                    <label for="person">個人</label>
+                </div>
+                <div class="modal-account__radio">
+                    <input type="radio" id="company" name="identity">
+                    <label for="company">公司</label>
+                </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="modal-account__radio">
+                    <input type="radio" id="cell-phone" name="invoice">
+                    <label for="cell-phone">手機條碼</label>
+                </div>
+                <div class="modal-account__radio">
+                    <input type="radio" id="electric" name="invoice">
+                    <label for="electric">電子發票</label>
+                </div>
+                <div class="modal-account__radio">
+                    <input type="radio" id="paper" name="invoice">
+                    <label for="paper">紙本發票</label>
+                </div>
+            </div>
+            <div class="modal-account__address row">
+                <div class="col-6">
+                    <div class="form-item select">
+                        <label for="">縣市</label>
+                        <div class="form-item__wrapper">
+                            <select name="" id="" class="form-item__main form-item__city">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-item select">
+                        <label for="">鄉鎮市區</label>
+                        <div class="form-item__wrapper">
+                            <select name="" id="" class="form-item__main form-item__district">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-item">
+                        <label for="">地址</label>
+                        <div class="form-item__wrapper">
+                            <input type="email" class="form-item__main" placeholder="請輸入地址">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-account__btn-row row">
+                <div class="col-6">
+                    <button class="modal-account__btn btn-purple">確認更新</button>
+                </div>
+                <div class="col-6">
+                    <a href="./checkout.html" class="modal-account__btn btn-orange border-purple">開始訂閱</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/tw-city-selector/tw-city-selector.js"></script>
+    <script src="./public/js/index.js?v=1"></script>
+
+    <script>
+        new TwCitySelector({
+            el: '.modal-account__address',
+            elCounty: '.form-item__city', 
+            elDistrict: '.form-item__district', 
+        });
+    </script>
+
+</body>
+</html>

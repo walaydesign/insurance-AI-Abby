@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險捷客</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css?v=1">
+</head>
+<body class="page-inner">
+    
+    <div class="page-inner__main modal-account modal-account--checkout">
+        <a href="./my-info.html" class="btn-back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 9L9 15" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 9L15 15" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="./subscribe.html" class="modal-account__back">
+            <img src="./public/img/arrow-left-line.svg" alt="">
+        </a>
+        <h3 class="modal-account__title">結帳</h3>
+        <table class="modal-account__checkout-info">
+            <tr>
+                <td class="td-title">目前訂閱方案 : </td>
+                <td>初階版</td>
+            </tr>
+            <tr>
+                <td class="td-title">付款條件 : </td>
+                <td>一次付清 / 月繳 $300</td>
+            </tr>
+            <tr>
+                <td class="td-title">付款人 : </td>
+                <td>劉先生</td>
+            </tr>
+            <tr>
+                <td class="td-title">發票開立通知信箱 :</td>
+                <td>joan.cpwei@gmail.com</td>
+            </tr>
+        </table>
+        <ul class="modal-account__plan-list">
+            <li>每日可發２０則ＡＩ對話。</li>
+            <li>可使用手機號碼、信箱進行登入。可開啟２ＦＡ。</li>
+            <li>保存過去１０筆「保險規劃」及「保險商品推薦」ＡＩ對話紀錄。</li>
+            <li>論壇：大頭貼、全名及２０字自我介紹。</li>
+            <li>論壇：手機、信箱、保險業務員登錄字號。</li>
+            <li>論壇：會員積分。</li>
+        </ul>
+        <div class="modal-account__total">
+            <h4>月繳方案 : </h4>
+            <p>$300</p>
+        </div>
+        <div class="modal-account__checkbox">
+            <input type="checkbox" id="remember-account">
+            <label for="remember-account">我已詳閱並同意<a href="./privacy-term.html" target="_blank">【隱私條款】</a></label>
+        </div>
+        <a href="./paid.html" class="modal-account__btn btn-orange border-purple">立即付款</a>
+    </div>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/tw-city-selector/tw-city-selector.js"></script>
+    <script src="./public/js/index.js?v=1"></script>
+
+</body>
+</html>

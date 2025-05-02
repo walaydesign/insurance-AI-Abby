@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險捷客</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css?v=1">
+</head>
+<body class="page-inner">
+    
+    <div class="page-inner__main modal-account modal-account--info">
+        <button class="btn-back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 9L9 15" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 9L15 15" stroke="#7B59A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="modal-account__head">
+            <img class="modal-account__head-mask" src="./public/img/info-mask.svg" alt="">
+            <h3 class="modal-account__title">我的資訊</h3>
+            <div class="modal-account__user">
+                <img src="./public/img/user-big.png" alt="">
+                <div class="modal-account__user-edit">
+                    <img src="./public/img/edit-3.svg" alt="">
+                    <input type="file">
+                </div>
+            </div>
+        </div>
+        <div class="modal-account__content">
+            <div class="modal-account__name">
+                <div class="modal-account__name-input">
+                    <input type="text" value="王捷克" disabled>
+                    <button><img src="./public/img/edit-3.svg" alt=""></button>
+                </div>
+                <p class="modal-account__plan">免費方案</p>
+            </div>
+            <a href="./subscribe.html" class="modal-account__upgrade">升級付費方案初階版</a>
+            <ul class="modal-account__info">
+                <li>
+                    <p>帳號 : 27480226</p>
+                    <a href="./change-password.html" class="modal-account__info-btn">變更密碼</a>
+                </li>
+                <li>
+                    <p>登錄信箱 : services@insurai.com.tw</p>
+                    <a href="./change-email.html" class="modal-account__info-btn">變更信箱</a>
+                </li>
+            </ul>
+            <div class="modal-account__textarea">
+                <textarea name="" id="" placeholder="個人簡介"></textarea>
+                <p>0/50</p>
+            </div>
+            <button class="modal-account__btn btn-purple" data-bs-dismiss="modal">更新</button>
+        </div>
+    </div>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/tw-city-selector/tw-city-selector.js"></script>
+    <script src="./public/js/index.js?v=1"></script>
+
+</body>
+</html>

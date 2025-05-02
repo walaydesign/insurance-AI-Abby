@@ -276,6 +276,7 @@ img {
         background-color: #F3F6FB;
         padding: 10px;
         overflow: hidden;
+        position: relative;
         @media screen and (max-width: 991px) {
             overflow: visible;
         }
@@ -298,6 +299,7 @@ img {
             max-height: calc(100vh - 50px);
             overflow-y: auto;
             width: 100%;
+            position: relative;
             .btn-back {
                 margin-left: auto;
             }
@@ -358,6 +360,7 @@ img {
         position: fixed;
         top: 22px;
         right: 58px;
+        z-index: 10;
         .nav_title {
             display: none;
         }
@@ -524,6 +527,8 @@ img {
     &-account {
         color: #000;
         overflow-y: auto !important;
+        max-width: 450px;
+        border-radius: 30px;
         .modal {
             &-content {
                 border: 0;
@@ -750,8 +755,8 @@ img {
             width: 24px;
             height: 24px;
             padding: 0;
-            top: 24px;
-            left: 24px;
+            top: 35px;
+            left: 40px;
             >img {
                 width: 100%;
             }
@@ -1096,6 +1101,7 @@ img {
             }
         }
         &--login {
+            box-shadow: 0 4px 4px rgba(0,0,0,0.25);
             .modal {
                 &-content {
                     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
@@ -1108,7 +1114,7 @@ img {
                 padding-right: 16px;
                 width: fit-content;
                 color: #151615;
-                display: block;
+                display: flex;
                 margin: 60px auto 0;
             }
         }
@@ -1130,6 +1136,7 @@ img {
             }
         }
         &--info {
+            padding: 0;
             .modal {
                 &-body {
                     padding: 0;
@@ -1155,6 +1162,12 @@ img {
                         margin-bottom: 32px;
                     }
                 }
+            }
+            .btn-back {
+                position: absolute;
+                top: 23px;
+                right: 28px;
+                z-index: 1;
             }
         }
         &--subscribe {
@@ -1203,6 +1216,7 @@ img {
             }
         }
         &--bill {
+            max-width: 500px;
             .modal-account__btn {
                 padding: 15px 34px;
                 width: fit-content;
@@ -1211,6 +1225,14 @@ img {
                 margin: 0 auto 20px;
                 display: block;
                 height: auto;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &-account {
+            &__back {
+                top: 20px;
+                left: 30px;
             }
         }
     }
