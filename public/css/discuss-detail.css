@@ -1,0 +1,414 @@
+.discuss-detail {
+  padding: 13px 40px 13px 13px;
+}
+
+.discuss-writer {
+  background-color: var(--white);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px 20px 10px;
+  width: calc((100% - 20px - 80px - 10px - 13px - 40px) * 0.2);
+  position: fixed;
+  left: calc(10px + 80px + 10px + 13px);
+  top: calc(10px + 60px + 10px + 50px);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.discuss-writer h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.discuss-writer__score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 8px 2px 18px;
+  border-radius: 100px;
+  background-color: #ECFDF3;
+  position: relative;
+  font-size: 12px;
+  color: #027A48;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 8px;
+}
+
+.discuss-writer__score::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #12B76A;
+  top: 50%;
+  left: 7px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.discuss-writer__insurance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+
+.discuss-writer__insurance svg {
+  width: 30px;
+  height: 30px;
+}
+
+.discuss-writer__insurance svg path {
+  fill: var(--gray-3);
+}
+
+.discuss-writer__insurance svg.active path {
+  fill: var(--primary-3);
+}
+
+.discuss-writer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 8px;
+  background-color: var(--secondary-1);
+  margin: 0 auto;
+  padding: 6px 11px;
+  border-radius: 100px;
+}
+
+.discuss-writer a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.discuss-writer a span {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.discuss-writer__pic {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.discuss-writer__pic > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.discuss-writer__tag {
+  padding: 2px 13px;
+  border-radius: 100px;
+  background-color: var(--primary-3);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.discuss-content {
+  width: 80%;
+  margin-left: auto;
+  padding-left: 25px;
+}
+
+.discuss-content__head {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--gray-1);
+}
+
+.discuss-content__head h1 {
+  font-size: 18px;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.discuss-content__time {
+  color: var(--gray-3);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.discuss-content__info-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.discuss-content__info-icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.discuss-content__info-icon p {
+  margin: 0;
+  font-weight: 500;
+  color: var(--gray-3);
+  font-family: var(--font-montserrat);
+}
+
+.discuss-content__info-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.discuss-content__info-btn.btn-orange svg path {
+  fill: var(--secondary-1);
+}
+
+.discuss-content__info-btn.btn-red svg path {
+  fill: var(--red);
+}
+
+.discuss-content__info-btn.btn-purple svg path {
+  fill: var(--primary-3);
+}
+
+.discuss-content__info-btn.btn-green svg path {
+  fill: var(--green);
+}
+
+.discuss-content__like {
+  cursor: pointer;
+}
+
+.discuss-content__like svg path {
+  fill: var(--gray-3);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.discuss-content__like.like svg path {
+  fill: var(--secondary-1);
+}
+
+.discuss-content__text {
+  padding-top: 11px;
+  color: var(--color-text);
+  padding-bottom: 14px;
+}
+
+.discuss-content__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+}
+
+.discuss-content__btn .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  padding: 8px 15px;
+  gap: 4px;
+  border: 1px solid;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.discuss-content__btn .btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.discuss-content__btn .btn svg path {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.discuss-content__btn .btn span {
+  font-size: 12px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.discuss-content__btn .btn:hover svg path {
+  fill: var(--white);
+}
+
+.discuss-content__btn .btn:hover span {
+  color: var(--white);
+}
+
+.discuss-content__btn .btn-purple {
+  border-color: var(--primary-3);
+}
+
+.discuss-content__btn .btn-purple svg path {
+  fill: var(--primary-3);
+}
+
+.discuss-content__btn .btn-purple span {
+  color: var(--primary-3);
+}
+
+.discuss-content__btn .btn-purple:hover {
+  background-color: var(--primary-3);
+}
+
+.discuss-content__btn .btn-red {
+  border-color: var(--red);
+}
+
+.discuss-content__btn .btn-red svg path {
+  fill: var(--red);
+}
+
+.discuss-content__btn .btn-red span {
+  color: var(--red);
+}
+
+.discuss-content__btn .btn-red:hover {
+  background-color: var(--red);
+}
+
+.discuss-content__btn .btn-green {
+  border-color: var(--green);
+}
+
+.discuss-content__btn .btn-green svg path {
+  fill: var(--green);
+}
+
+.discuss-content__btn .btn-green span {
+  color: var(--green);
+}
+
+.discuss-content__btn .btn-green:hover {
+  background-color: var(--green);
+}
+
+@media screen and (max-width: 991px) {
+  .discuss-detail {
+    background-color: var(--white);
+    -webkit-box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    padding: 13px 30px 60px;
+  }
+  .discuss-writer {
+    position: static;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0 0 10px;
+  }
+  .discuss-writer__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+  }
+  .discuss-writer__pic {
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    left: inherit;
+    top: inherit;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .discuss-writer h2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 0;
+  }
+  .discuss-writer__score {
+    margin: 0;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .discuss-writer__insurance {
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .discuss-writer__insurance svg {
+    width: 27px;
+    height: 27px;
+  }
+  .discuss-content {
+    padding: 0;
+    width: 100%;
+  }
+  .discuss-content h1 {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-1);
+  }
+  .discuss-content__head {
+    border: 0;
+  }
+  .discuss-content__info {
+    border: 0;
+    padding-top: 13px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=discuss-detail.css.map */

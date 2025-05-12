@@ -1,0 +1,418 @@
+.chat {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.chat .question {
+  padding: 17px 26px;
+  border-radius: 30px 30px 0 30px;
+  background-color: #EEEEEE;
+  color: var(--color-text);
+  margin-bottom: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.chat .answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.chat .answer_logo {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: var(--primary-3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chat .answer_logo img {
+  width: 18px;
+}
+
+.chat .answer_text {
+  width: calc(100% - 33px);
+  padding-left: 12px;
+  line-height: 1.9;
+}
+
+.chat .answer_text hr {
+  margin: 10px 0;
+}
+
+.chat_inner {
+  padding-bottom: 40px;
+}
+
+.chat_bottom {
+  position: fixed;
+  border-radius: 0 0 30px 30px;
+  bottom: 10px;
+  right: 30px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  background-color: var(--white);
+  width: calc(100% - 20px - 80px - 10px - 40px);
+}
+
+.chat_bottom_inner {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.chat_bottom .remark {
+  font-size: 14px;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.chat_input {
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--primary-1);
+  margin-bottom: 10px;
+  background-color: var(--white);
+}
+
+.chat_input input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.chat_input input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.chat_input input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.chat_input input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.chat_input input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.chat_input_add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-1);
+}
+
+.chat_input_add img {
+  width: 34px;
+}
+
+.chat_input_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat_input_btn_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.chat_input_btn_left button {
+  padding: 8px;
+  border-radius: 100px;
+  border: 1px solid var(--primary-3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.chat_input_btn_left button img {
+  width: 24px;
+}
+
+.chat_input_btn_left button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.chat_input_btn_left button svg path {
+  fill: var(--primary-3);
+}
+
+.chat_input_btn_left button span {
+  color: var(--primary-3);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  font-size: 16px;
+}
+
+.chat_input_btn_left button.btn-orange {
+  border-color: var(--secondary-1);
+}
+
+.chat_input_btn_left button.btn-orange span {
+  color: var(--secondary-1);
+}
+
+.chat_input_btn_left button.btn-icon {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+}
+
+.chat_input_btn_left button.btn-icon > img {
+  width: 100%;
+}
+
+.chat_input_btn_left button.btn-func {
+  position: relative;
+}
+
+.chat_input_btn_left button.btn-func ul {
+  position: absolute;
+  background-color: var(--white);
+  width: 100px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.3);
+  bottom: 100%;
+  left: 0;
+  display: none;
+}
+
+.chat_input_btn_left button.btn-func ul li {
+  cursor: pointer;
+  padding: 6px 15px;
+  border-bottom: 1px solid var(--gray-1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.chat_input_btn_left button.btn-func ul li img {
+  width: 16px;
+}
+
+.chat_input_btn_left button.btn-func ul li span {
+  color: var(--primary-2);
+}
+
+.chat_input_btn_left button.btn-func ul li:last-child {
+  border: 0;
+}
+
+.chat_input_btn_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.chat_input_btn_link button {
+  padding: 8px 16px;
+}
+
+.chat_input_btn_link button:hover {
+  background-color: var(--secondary-1);
+}
+
+.chat_input_btn_link button:hover span {
+  font-weight: 700;
+}
+
+.chat_input_send {
+  width: 36px;
+  padding: 0;
+}
+
+.chat_input_send > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .chat {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .chat_bottom {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .chat_bottom_inner {
+    background-color: var(--primary-4);
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: inherit;
+  }
+  .chat_input {
+    padding: 15px;
+  }
+  .chat_input_add {
+    width: 30px;
+    height: 30px;
+  }
+  .chat_input_btn_left {
+    gap: 8px;
+  }
+  .chat_input_btn_left button {
+    gap: 0;
+    padding: 6px 8px;
+  }
+  .chat_input_btn_left button img {
+    width: 16px;
+  }
+  .chat_input_btn_left button span {
+    font-size: 16px;
+  }
+  .chat_input_btn_link {
+    gap: 8px;
+  }
+  .chat_input_send {
+    width: 24px;
+    position: absolute;
+    top: 24px;
+    right: 32px;
+  }
+  .chat_input input {
+    font-size: 18px;
+  }
+  .chat_inner {
+    padding-bottom: 120px;
+  }
+  .chat .question {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  .chat .answer_logo {
+    width: 30px;
+    height: 30px;
+  }
+  .chat .answer_text {
+    width: calc(100% - 30px);
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .chat_input {
+    padding: 10px;
+    position: relative;
+  }
+  .chat_input_btn_left {
+    gap: 8px;
+  }
+  .chat_input_btn_left button {
+    gap: 4px;
+  }
+  .chat_input_btn_left button img {
+    width: 12px;
+  }
+  .chat_input_btn_left button span {
+    font-size: 12px;
+  }
+  .chat_input_btn_left button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .chat_input_btn_left button .btn-func_list span {
+    font-size: 16px;
+  }
+  .chat_input_send {
+    top: 15px;
+    right: 12px;
+  }
+  .chat_input input {
+    margin-bottom: 12px;
+  }
+}
+
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 12, 13, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+.loading img {
+  width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=chat.css.map */

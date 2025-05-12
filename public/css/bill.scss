@@ -1,0 +1,98 @@
+.modal-account {
+    &--bill {
+        max-width: 500px;
+        .modal-account__btn {
+            padding: 15px 34px;
+            width: fit-content;
+            font-size: 14px;
+            color: var(--primary-5);
+            margin: 0 auto 20px;
+            display: block;
+            height: auto;
+        }        
+    }
+    &__bill-info {
+        width: fit-content;
+        margin: 0 auto 25px;
+        li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            p {
+                margin: 0;
+            }
+            button {
+                width: 28px;
+                height: 28px;
+                padding: 0;
+                svg {
+                    width: 28px;
+                    height: 28px;
+                    path {
+                        fill: var(--primary-3);
+                    }
+                }
+            }
+        }
+    }
+    &__record {
+        width: 100%;
+        th, td {
+            padding: 15px 5px;
+            text-align: center;
+        }
+        th {
+            background-color: var(--primary-3);
+            color: var(--white);
+            font-weight: 700;
+            font-size: 14px;
+            white-space: nowrap;
+            &:first-child {
+                border-radius: 20px 0 0 0;
+            }
+            &:last-child {
+                border-radius: 0 20px 0 0;
+            }
+        }
+        td {
+            color: var(--black);
+            font-size: 12px;
+            &.td {
+                &-num {
+                    word-break : break-all;
+                    width: 18%;
+                }
+                &-content {
+                    width: 24%;
+                }
+                &-time {
+                    width: 24%;
+                }
+            }
+        }
+        tr {
+            &:last-child {
+                td {
+                    &:first-child {
+                        border-radius: 0 0 0 20px;
+                    }
+                    &:last-child {
+                        border-radius: 0 0 20px 0;
+                    }                        
+                }
+            }
+            &:nth-child(odd) {
+                td {
+                    background-color: var(--primary-6);
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &--bill {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

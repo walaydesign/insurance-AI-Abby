@@ -1,0 +1,115 @@
+.modal-account--bill {
+  max-width: 500px;
+}
+
+.modal-account--bill .modal-account__btn {
+  padding: 15px 34px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  color: var(--primary-5);
+  margin: 0 auto 20px;
+  display: block;
+  height: auto;
+}
+
+.modal-account__bill-info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 25px;
+}
+
+.modal-account__bill-info li {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.modal-account__bill-info li p {
+  margin: 0;
+}
+
+.modal-account__bill-info li button {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+}
+
+.modal-account__bill-info li button svg {
+  width: 28px;
+  height: 28px;
+}
+
+.modal-account__bill-info li button svg path {
+  fill: var(--primary-3);
+}
+
+.modal-account__record {
+  width: 100%;
+}
+
+.modal-account__record th, .modal-account__record td {
+  padding: 15px 5px;
+  text-align: center;
+}
+
+.modal-account__record th {
+  background-color: var(--primary-3);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.modal-account__record th:first-child {
+  border-radius: 20px 0 0 0;
+}
+
+.modal-account__record th:last-child {
+  border-radius: 0 20px 0 0;
+}
+
+.modal-account__record td {
+  color: var(--black);
+  font-size: 12px;
+}
+
+.modal-account__record td.td-num {
+  word-break: break-all;
+  width: 18%;
+}
+
+.modal-account__record td.td-content {
+  width: 24%;
+}
+
+.modal-account__record td.td-time {
+  width: 24%;
+}
+
+.modal-account__record tr:last-child td:first-child {
+  border-radius: 0 0 0 20px;
+}
+
+.modal-account__record tr:last-child td:last-child {
+  border-radius: 0 0 20px 0;
+}
+
+.modal-account__record tr:nth-child(odd) td {
+  background-color: var(--primary-6);
+}
+
+@media screen and (max-width: 575px) {
+  .modal-account--bill {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/*# sourceMappingURL=bill.css.map */

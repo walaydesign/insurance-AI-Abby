@@ -1,0 +1,22 @@
+.modal-account {
+    &--paid {
+        .modal-body {
+            padding: 300px 20px;
+        }
+        .modal-account__btn {
+            width: fit-content;
+            display: block;
+            font-size: 14px;
+            padding: 15px 45px;
+            height: auto;
+            margin: 0 auto 17px;
+        }
+    }
+    &__count {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--color-text);
+    }
+
+}

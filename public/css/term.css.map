@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,iBADa,AACZ,UAAU,CAAC;EACR,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "term.scss"
+    ],
+    "names": [],
+    "file": "term.css"
+}

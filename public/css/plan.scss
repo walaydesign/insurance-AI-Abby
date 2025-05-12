@@ -22,7 +22,7 @@
     }
     &__item {
         padding: 30px 30px 40px;
-        background-color: #fff;
+        background-color: var(--white);
         border-radius: 24px;
         border: 1px solid #E1E1E1;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -33,16 +33,16 @@
             text-align: center;
             font-size: 25px;
             font-weight: 700;
-            color: #1A1A1A;
+            color: var(--gray-6);
             margin-bottom: 16px;
             font-weight: 700;
-            font-family: $font-grotesk;
+            font-family: var(--font-grotesk);
         }
         ul {
             li {
                 font-size: 12px;
                 padding-left: 22px;
-                color: #000;
+                color: var(--black);
                 position: relative;
                 line-height: 1.7;
                 margin-bottom: 3px;
@@ -69,8 +69,8 @@
             width: calc(100% - 60px);
             border-radius: 100px;
             padding: 12px 24px;
-            background-color: #4A4458;
-            color: #fff;
+            background-color: var(--primary-2);
+            color: var(--white);
             font-weight: 700;
             position: absolute;
             bottom: 40px;
@@ -79,8 +79,8 @@
         }
         &.hot {
             button {
-                background-color: #F3994F;
-                color: #000;
+                background-color: var(--secondary-1);
+                color: var(--black);
             }
         }
     }
@@ -91,10 +91,10 @@
         gap: 4px;
         margin-bottom: 10px;
         p {
-            font-family: $font-grotesk;
+            font-family: var(--font-grotesk);
             margin: 0;
             font-weight: 700;
-            color: #1A1A1A;
+            color: var(--gray-6);
             &.num {
                 font-size: 32px;
             }
@@ -111,7 +111,7 @@
         background-color: #FFBB00;
         text-align: center;
         border-radius: 28px 28px 24px 24px;
-        color: #1A1A1A;
+        color: var(--gray-6);
         font-size: 12px;
         font-weight: 600;
         left: 0;

@@ -1,0 +1,108 @@
+.modal-account--login {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-account--login .modal-content {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-account--accountnum .modal-account__btn {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #151615;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 60px auto 0;
+}
+
+.modal-account__logo {
+  display: block;
+  width: 160px;
+  margin: 0 auto 60px;
+}
+
+.modal-account__forget {
+  padding: 0;
+  color: var(--gray-2);
+}
+
+.modal-account__or {
+  margin: 16px 0;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.modal-account__or span {
+  display: block;
+  padding: 0 10px;
+  background-color: var(--white);
+  line-height: 24px;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #6E6E6E;
+}
+
+.modal-account__or::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray-1);
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.modal-account__progress {
+  margin-bottom: 40px;
+}
+
+.modal-account__progress .row {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+
+.modal-account__progress .row > div {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.modal-account__progress .progress__item {
+  width: 100%;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #07459E;
+}
+
+.modal-account__progress .progress__item.active {
+  background-color: #FCDE06;
+}
+
+.modal-account__num {
+  padding: 0 55px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #E9D6FF;
+  margin: 0 auto 24px;
+  color: var(--primary-2);
+  font-size: 35px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=login.css.map */

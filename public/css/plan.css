@@ -1,0 +1,170 @@
+.plan {
+  padding: 100px 0 110px;
+}
+
+.plan .btn-back {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+}
+
+.plan h1 {
+  text-align: center;
+  margin-bottom: 70px;
+  color: #6C6777;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.plan .row {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+
+.plan .row > div {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.plan__item {
+  padding: 30px 30px 40px;
+  background-color: var(--white);
+  border-radius: 24px;
+  border: 1px solid #E1E1E1;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.plan__item h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--gray-6);
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-family: var(--font-grotesk);
+}
+
+.plan__item ul li {
+  font-size: 12px;
+  padding-left: 22px;
+  color: var(--black);
+  position: relative;
+  line-height: 1.7;
+  margin-bottom: 3px;
+}
+
+.plan__item ul li::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/Badge.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 2px;
+  left: 0;
+}
+
+.plan__item ul li.highlight::before {
+  background-image: url(../img/Badge-highlight.svg);
+}
+
+.plan__item button {
+  width: calc(100% - 60px);
+  border-radius: 100px;
+  padding: 12px 24px;
+  background-color: var(--primary-2);
+  color: var(--white);
+  font-weight: 700;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.plan__item.hot button {
+  background-color: var(--secondary-1);
+  color: var(--black);
+}
+
+.plan__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 38px;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.plan__price p {
+  font-family: var(--font-grotesk);
+  margin: 0;
+  font-weight: 700;
+  color: var(--gray-6);
+}
+
+.plan__price p.num {
+  font-size: 32px;
+}
+
+.plan__price p.unit {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.plan__tag {
+  position: absolute;
+  width: 100%;
+  padding: 10px 10px 34px;
+  background-color: #FFBB00;
+  text-align: center;
+  border-radius: 28px 28px 24px 24px;
+  color: var(--gray-6);
+  font-size: 12px;
+  font-weight: 600;
+  left: 0;
+  z-index: -1;
+  height: calc(100% + 33px);
+  bottom: 0;
+  -webkit-box-shadow: 0 73px 44px rgba(0, 0, 0, 0.05), 0 33px 33px rgba(0, 0, 0, 0.09), 0 8px 18px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 73px 44px rgba(0, 0, 0, 0.05), 0 33px 33px rgba(0, 0, 0, 0.09), 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 991px) {
+  .plan__item {
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .plan__item.hot {
+    margin-top: 33px;
+  }
+  .plan h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .plan {
+    padding: 0;
+  }
+  .plan__item {
+    max-width: 280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .plan .btn-back {
+    top: 40px;
+    right: 45px;
+  }
+}
+/*# sourceMappingURL=plan.css.map */
