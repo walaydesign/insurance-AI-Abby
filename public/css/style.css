@@ -376,6 +376,11 @@ img {
   position: relative;
 }
 
+.page-main-home {
+  overflow: visible;
+  padding: 0;
+}
+
 @media screen and (max-width: 991px) {
   .page-main {
     overflow: visible;

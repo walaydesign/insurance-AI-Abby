@@ -299,6 +299,10 @@ img {
         padding: 10px;
         overflow: hidden;
         position: relative;
+        &-home {
+            overflow: visible;
+            padding: 0;
+        }
         @media screen and (max-width: 991px) {
             overflow: visible;
         }

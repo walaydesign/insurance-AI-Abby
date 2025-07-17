@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險捷客</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/style.css?v=1">
+    <link rel="stylesheet" href="./public/css/index-2.css">
+</head>
+<body class="page-main page-main-home">
+    <header class="header">
+        <div class="container">
+            <img src="./public/img/LOGO-purple-text.svg" alt="" class="header_logo">
+            <nav class="header_nav">
+                <ul>
+                    <li class="header_nav_item" data-target="#project">專題名稱</li>
+                    <li class="header_nav_item" data-target="#retire">退休期66+</li>
+                    <li class="header_nav_item" data-target="#smallerresponse">責任期遞減51-65</li>
+                    <li class="header_nav_item" data-target="#higherresponse">責任高峰期30-50</li>
+                    <li class="header_nav_item" data-target="#income">收入成長期20-35</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="home-content">
+        <div class="container">
+            <div class="home-content_main">
+                <div class="home-content_banner">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="home-content_banner_top">
+                                <div class="swiper-container home-banner-hastext">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="home-banner_item">
+                                                <img src="./public/img/banner-1.png" alt="">
+                                                <div class="home-banner_text">
+                                                    <h2>個人化建議</h2>
+                                                    <p>
+                                                        根據您的需求量身定制
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="home-banner_item">
+                                                <img src="./public/img/banner-1.png" alt="">
+                                                <div class="home-banner_text">
+                                                    <h2>個人化建議</h2>
+                                                    <p>
+                                                        根據您的需求量身定制
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="home-banner_item">
+                                                <img src="./public/img/banner-1.png" alt="">
+                                                <div class="home-banner_text">
+                                                    <h2>個人化建議</h2>
+                                                    <p>
+                                                        根據您的需求量身定制
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="home-content_banner_top">
+                                <div class="swiper-container home-banner-onlypic">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="home-banner_item">
+                                                <img src="./public/img/banner-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="home-banner_item">
+                                                <img src="./public/img/banner-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="home-banner_item">
+                                                <img src="./public/img/banner-2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="home-content_banner_bottom">
+                                <img src="./public/img/banner-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project d-md-block d-none" id="project">
+                    <ul class="nav nav-tabs home-tab project_tab" id="project_tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="project-3" data-bs-toggle="tab" data-bs-target="#project-1-pane" type="button" role="tab" aria-controls="project-1-pane" aria-selected="true">專題名稱1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="project-2" data-bs-toggle="tab" data-bs-target="#project-2-pane" type="button" role="tab" aria-controls="project-2-pane" aria-selected="false">專題名稱2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="project-3" data-bs-toggle="tab" data-bs-target="#project-3-pane" type="button" role="tab" aria-controls="project-3-pane" aria-selected="false">專題名稱3</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="project_content">
+                        <div class="tab-pane fade show active" id="project-1-pane" role="tabpanel" aria-labelledby="project-1" tabindex="0">
+                            <div class="project_content">
+                                <div class="swiper-container project_content_pic project-1_swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="project_content_text">
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="" class="readmore">看更多</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="project-2-pane" role="tabpanel" aria-labelledby="project-2" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="project-3-pane" role="tabpanel" aria-labelledby="project-3" tabindex="0">...</div>
+                    </div>
+                </div>
+                <div class="project d-md-none">
+                    <ul class="nav nav-tabs home-tab project_tab" id="project_tab-1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="project-1-m" data-bs-toggle="tab" data-bs-target="#project-1-m-pane" type="button" role="tab" aria-controls="project-1-m-pane" aria-selected="true">專題名稱1</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="project_content">
+                        <div class="tab-pane fade show active" id="project-1-m-pane" role="tabpanel" aria-labelledby="project-1-m" tabindex="0">
+                            <div class="project_content">
+                                <div class="swiper-container project_content_pic project-1_swiper-m">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="project_content_text">
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="" class="readmore">看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project d-md-none">
+                    <ul class="nav nav-tabs home-tab project_tab" id="project_tab-2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="project-2-m" data-bs-toggle="tab" data-bs-target="#project-2-pane" type="button" role="tab" aria-controls="project-2-pane" aria-selected="true">專題名稱2</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="project_content">
+                        <div class="tab-pane fade show active" id="project-2-pane-m" role="tabpanel" aria-labelledby="project-2" tabindex="0">
+                            <div class="project_content">
+                                <div class="swiper-container project_content_pic project-2_swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="project_content_text">
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="" class="readmore">看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project d-md-none">
+                    <ul class="nav nav-tabs home-tab project_tab" id="project_tab-3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="project-3-m" data-bs-toggle="tab" data-bs-target="#project-3-pane-m" type="button" role="tab" aria-controls="project-3-pane" aria-selected="true">專題名稱3</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="project_content">
+                        <div class="tab-pane fade show active" id="project-3-pane-m" role="tabpanel" aria-labelledby="project-3" tabindex="0">
+                            <div class="project_content">
+                                <div class="swiper-container project_content_pic project-3_swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="project_swiper_pic">
+                                                <img src="./public/img/pic-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="project_content_text">
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                    <a href="" class="project_content_link">
+                                        <span>地福主能傳造成快？樂媽之計題。親健那們在約已臺人後女房車慢的明還可景強共識</span>
+                                        <div class="project_content_read">
+                                            <img src="./public/img/view.svg" alt="">
+                                            <span>20</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="" class="readmore">看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="theme d-md-block d-none" id="retire">
+                    <div class="theme_title">
+                        <h2>退休期66+</h2>
+                        <a href="" class="readmore">看更多</a>
+                    </div>
+                    <div class="theme_content">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="theme d-md-block d-none" id="smallerresponse">
+                    <div class="theme_title">
+                        <h2>責任期遞減51-65</h2>
+                        <a href="" class="readmore">看更多</a>
+                    </div>
+                    <div class="theme_content">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="theme d-md-block d-none" id="higherresponse">
+                    <div class="theme_title">
+                        <h2>責任高峰期-35</h2>
+                        <a href="" class="readmore">看更多</a>
+                    </div>
+                    <div class="theme_content">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="theme d-md-block d-none" id="income">
+                    <div class="theme_title">
+                        <h2>收入成長期20-35</h2>
+                        <a href="" class="readmore">看更多</a>
+                    </div>
+                    <div class="theme_content">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="theme_item">
+                                    <div class="theme_item_inner">
+                                        <div class="theme_item_pic">
+                                            <img src="./public/img/pic-2.png" alt="">
+                                        </div>
+                                        <div class="theme_item_text">
+                                            <h3>聲別引了弟道眼背藝能什，一己角議防南權！會海部終千利想平然運進然有響如說終勢數時品家她、共展們後一制</h3>
+                                            <img src="./public/img/arrow-long.svg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-content_side">
+                <div class="home_discuss d-md-block d-none">
+                    <ul class="nav nav-tabs home-tab" id="home_discuss_tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="hot-discuss" data-bs-toggle="tab" data-bs-target="#hot-discuss-pane" type="button" role="tab" aria-controls="hot-discuss-pane" aria-selected="true">熱門討論</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="new-article" data-bs-toggle="tab" data-bs-target="#new-article-pane" type="button" role="tab" aria-controls="new-article-pane" aria-selected="false">最新文章</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="home_discuss_content">
+                        <div class="tab-pane fade show active" id="hot-discuss-pane" role="tabpanel" aria-labelledby="hot-discuss" tabindex="0">
+                            <div class="home_discuss_content">
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                            </div>
+                            <a href="" class="readmore">看更多</a>
+                        </div>
+                        <div class="tab-pane fade" id="new-article-pane" role="tabpanel" aria-labelledby="new-article" tabindex="0">...</div>
+                    </div>
+                </div>
+                <div class="home_discuss d-md-none">
+                    <ul class="nav nav-tabs home-tab" id="home_discuss_tab-1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="hot-discuss-1" data-bs-toggle="tab" data-bs-target="#hot-discuss-pane-1" type="button" role="tab" aria-controls="hot-discuss-pane" aria-selected="true">熱門討論</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="home_discuss_content-1">
+                        <div class="tab-pane fade show active" id="hot-discuss-pane-1" role="tabpanel" aria-labelledby="hot-discuss" tabindex="0">
+                            <div class="home_discuss_content">
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                            </div>
+                            <a href="" class="readmore">看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_discuss d-md-none">
+                    <ul class="nav nav-tabs home-tab" id="home_discuss_tab-2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="new-article-2" data-bs-toggle="tab" data-bs-target="#new-article-pane-2" type="button" role="tab" aria-controls="new-article-pane-2" aria-selected="false">最新文章</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="home_discuss_content-2">
+                        <div class="tab-pane fade show active" id="new-article-pane-2" role="tabpanel" aria-labelledby="new-article" tabindex="0">
+                            <div class="home_discuss_content">
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                                <a href="" class="home_discuss_link">
+                                    <span>力備傳明工預先？不都濟……一學想後？放表道農沒能望來到學官展牛黑為學向口，因國我去看就低是，道有馬今詩雙</span>
+                                    <img src="./public/img/arrow-double.svg" alt="">
+                                </a>
+                            </div>
+                            <a href="" class="readmore">看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_ad d-md-block d-none">
+                    <img src="./public/img/pic-3.png" alt="">
+                </div>
+                <div class="home_ad d-md-block d-none">
+                    <img src="./public/img/pic-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer_info">
+                    <img src="./public/img/logo-text-hasen.png" alt="">
+                    <ul>
+                        <li>
+                            <img src="./public/img/address-2.svg" alt="">
+                            <p>台北市信義區忠孝東路五段1之2號5樓502室</p>
+                        </li>
+                        <li>
+                            <img src="./public/img/invoice.svg" alt="">
+                            <p>統一編號</p>
+                            <div class="divide"></div>
+                            <p>83288752</p>
+                        </li>
+                        <li>
+                            <img src="./public/img/email-2.svg" alt="">
+                            <p>客服信箱</p>
+                            <div class="divide"></div>
+                            <p>services@jrsoft.technology</p>
+                        </li>
+                        <li>
+                            <img src="./public/img/phone.svg" alt="">
+                            <p>電話號碼</p>
+                            <div class="divide"></div>
+                            <p>0987654321</p>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer_nav d-lg-flex d-none">
+                    <ul>
+                        <li class="footer_nav_title">關於捷世睿科技</li>
+                        <li><a href="">大事記</a></li>
+                        <li><a href="">人才招募</a></li>
+                        <li><a href="">隱私權聲明</a></li>
+                        <li><a href="">服務條款</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer_nav_title">客戶服務</li>
+                        <li><a href="">聯絡我們</a></li>
+                        <li><a href="">常見Q&A</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer_nav_title">其他服務</li>
+                        <li><a href="">保險捷客</a></li>
+                    </ul>
+                    <ul>
+                        <li class="footer_nav_title">企業合作</li>
+                        <li><a href="">媒體聯繫</a></li>
+                    </ul>
+                </nav>
+                <img class="footer_verify" src="./public/img/verify.png" alt="">
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_social">
+                    <a href=""><img src="./public/img/facebook-2.svg" alt=""></a>
+                    <a href=""><img src="./public/img/line.svg" alt=""></a>
+                </div>
+                <p>版權所有@2020 JRSoft Technology Ltd. All Rights Reserved. 捷世睿科技有限公司</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/index.js?v=1"></script>
+    <script>
+        var swiperBannerA = new Swiper(".home-banner-hastext", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1000,
+        })
+
+        var swiperBannerB = new Swiper(".home-banner-onlypic", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1000,
+        })
+
+        var swiperProject = new Swiper(".project-1_swiper", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1000,
+        })
+
+        var swiperProject_1 = new Swiper(".project-1_swiper-m", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1000,
+        })
+
+        var swiperProject_2 = new Swiper(".project-2_swiper-m", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1000,
+        })
+
+        var swiperProject_3 = new Swiper(".project-3_swiper-m", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1000,
+        })
+
+        $(".header_nav_item").click(function(){
+            let target = $(this).data("target");
+            var top = $(target).offset().top - 110;
+            $("html, body").animate({ scrollTop: top }, parseInt(300));
+        })
+    </script>
+</body>
+</html>
