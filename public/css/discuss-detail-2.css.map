@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,SAAS,EAAE,MAAM;CACpB",
+    "sources": [
+        "discuss-detail-2.scss"
+    ],
+    "names": [],
+    "file": "discuss-detail-2.css"
+}
